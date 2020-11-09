@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+	
+		<!-- Runtime Settings -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		
+		<!-- Connection Properties -->
+		<property name="hibernate.connection.url">jdbc:mysql://{Your EC2 Server URL}:3306/{Your DB Name}</property>
+		<property name="hibernate.connection.username">{Your MySQL User ID}</property>
+		<property name="hibernate.connection.password">{Your Password}</property>
+		
+		<!-- Database Interaction Properties -->
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		
+		<!-- Hibernate Mappings -->
+		<mapping class="model.Survey"/>
+		<mapping class="model.Question"/>
+		<mapping class="model.Choice"/>
+		
+	</session-factory>
+</hibernate-configuration>
