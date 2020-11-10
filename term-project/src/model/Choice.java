@@ -18,6 +18,9 @@ public class Choice {
     @Column(name = "value", nullable = false)
     private String value;
     
+    @Column(name = "response_count", nullable = false)
+    private int responseCount;
+    
     public Choice(int id, String value) {
         setId(id);
         setValue(value);

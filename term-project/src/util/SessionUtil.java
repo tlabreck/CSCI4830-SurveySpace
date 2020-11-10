@@ -13,7 +13,7 @@ public class SessionUtil {
      * Initializes sessionFactory to the default configuration (hibernate.cfg.xml).
      */
     private static void buildSessionFactory() {
-        ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().build();
+        ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().configure().build();
         Metadata metadata = new MetadataSources(serviceRegistry).getMetadataBuilder().build();
         
         sessionFactory = metadata.getSessionFactoryBuilder().build();

@@ -7,12 +7,12 @@
 	
 		<!-- Runtime Settings -->
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
-		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.driver_class"> com.mysql.cj.jdbc.Driver</property>
 		
 		<!-- Connection Properties -->
-		<property name="hibernate.connection.url">jdbc:mysql://{Your EC2 Server URL}:3306/{Your DB Name}</property>
-		<property name="hibernate.connection.username">{Your MySQL User ID}</property>
-		<property name="hibernate.connection.password">{Your Password}</property>
+		<property name="hibernate.connection.url">jdbc:mysql://ec2-18-221-13-206.us-east-2.compute.amazonaws.com:3306/survey_space</property>
+		<property name="hibernate.connection.username">survey_space</property>
+		<property name="hibernate.connection.password">]PT*{4\k"u4#Z;2y</property>
 		
 		<!-- Database Interaction Properties -->
 		<property name="hibernate.hbm2ddl.auto">update</property>
