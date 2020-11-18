@@ -41,4 +41,12 @@ public class Choice {
     public void setValue(String value) {
         this.value = value;
     }
+    
+    public int getResponseCount() {
+        return responseCount;
+    }
+    
+    public void setResponseCount(int responseCount) {
+        this.responseCount = responseCount;
+    }
 }
