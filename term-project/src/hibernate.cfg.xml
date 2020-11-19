@@ -12,7 +12,7 @@
 		<!-- Connection Properties -->
 		<property name="hibernate.connection.url">jdbc:mysql://ec2-18-188-90-108.us-east-2.compute.amazonaws.com:3306/survey_space</property>
 		<property name="hibernate.connection.username">survey_space</property>
-		<property name="hibernate.connection.password">]PT*{4\k"u4#Z;2y</property>
+		<property name="hibernate.connection.password">csci4830</property>
 		
 		<!-- Database Interaction Properties -->
 		<property name="hibernate.hbm2ddl.auto">update</property>
